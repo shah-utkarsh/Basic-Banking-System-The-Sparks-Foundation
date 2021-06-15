@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  opacity: 1;
+  z-index: -1;
+}
+/* image  */
+#logo {
+  margin: 2px 20px;
+}
+#logo img {
+  display: inline-block;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  /* padding: 23px 23px; */
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 6px 50px;
+  border-radius: 23px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: white;
+  background: #55abef;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 744px;
+  align-items: center;
+  justify-content: center;
+}
+#home::before {
+  content: "";
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 744px;
+  opacity: 0.6;
+  z-index: -1;
+}
+#home h1 {
+  padding: 21px 1px;
+}
+
+/* footer section */
+footer {
+  height: 23px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  background: black;
+  color: white;
+}
+
+/* View Customer */
+#viewcustomer {
+  /* border: 2px solid red; */
+  height: 669px;
+  margin-top: 75px;
+  /* background-color: cyan; */
+}
+#viewcustomer::before {
+  content: "";
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 760px;
+  opacity: 0.4;
+  z-index: -1;
+}
+#viewcustomer h1 {
+  padding-top: 25px;
+}
+#viewcustomer table {
+  margin-top: 25px;
+  border-spacing: 23px;
+  border-collapse: collapse;
+}
+
+#viewcustomer table td {
+  border: 1px solid black;
+  padding: 10px 23px;
+}
+#viewcustomer table th,
+td {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* view Single customer  */
+#outer-box h1{
+  margin-bottom: 30px;
+}
+#outer-box {
+  /* background-color: cyan; */
+  margin-top: 75px;
+  height: 674px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+#outer-box::before {
+  content: "";
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 760px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#outer-box table {
+  width: 50%;
+  border-collapse: collapse;
+  padding: 23px;
+}
+
+#outer-box table td {
+  border: 1px solid black;
+  padding: 10px 23px;
+}
+
+.button {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(74, 82, 194);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  color: white;
+  background-color: #238083;
+}
+
+.button:active {
+  background-color: rgb(74, 82, 194);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button2 {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 6px 26px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(74, 82, 194);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 9px #999;
+}
+
+.button2:hover {
+  color: white;
+  background-color: #238083;
+}
+
+.button2:active {
+  background-color: rgb(74, 82, 194);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* Transaction */
+#transaction {
+  /* border: 2px solid red; */
+  height: 670px;
+  margin-top: 75px;
+  /* background-color: cyan; */
+  /* background: url(./images/background3.jpg) no-repeat center center/cover ; */
+}
+#transaction::before {
+  content: "";
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 760px;
+  opacity: 0.4;
+  z-index: -1;
+}
+#transaction h1 {
+  padding-top: 25px;
+}
+#transaction table {
+  margin-top: 25px;
+  border-spacing: 23px;
+  border-collapse: collapse;
+}
+
+#transaction table td {
+  padding: 18px 23px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+#transaction input[type="text"],
+input[type="number"] {
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+}
+#transaction select {
+  max-width: 90%;
+}
+
+/* Transaction History   */
+#history {
+  margin-top: 75px;
+}
+#history::before {
+  content: "";
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 761px;
+  opacity: 0.4;
+  z-index: -1;
+}
+#history table {
+  margin-top: 25px;
+  border-spacing: 30px;
+  border-collapse: collapse;
+}
+
+#history table td,
+th {
+  border: 1px solid black;
+  padding: 10px 23px;
+  text-align: center;
+}
+#history table th,
+td {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#history h1 {
+  padding-top: 40px;
+}
+/* contact Me */
+#contact {
+  margin-top: 75px;
+  height: 674px;
+  width: 100%;
+  border: 2px solid red;
+}
+
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.5rem;
+}
+.h-secondary {
+  font-size: 1.5rem;
+}
+.center {
+  text-align: center;
+}
+.check {
+  background-color: black;
+  color: white;
+}
+.centertable {
+  margin-left: auto;
+  margin-right: auto;
+}
